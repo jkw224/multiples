@@ -10,15 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // Properties
+    
+    
+    
+    // Outlets
+    @IBOutlet weak var multiplesLogo: UIImageView!
+    @IBOutlet weak var multiplesText: UITextField!
+    @IBOutlet weak var playButton: UIButton!
+    
+    @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var addButton: UIButton!
+    
+    
+    // Actions
+    @IBAction func playMultiples(sender: UIButton) {
+        multiplesLogo.hidden = true
+        multiplesText.hidden = true
+        playButton.hidden = true
+        
+        outputLabel.hidden = false
+        addButton.hidden = false
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func addMultiples(sender: UIButton) {
+        
     }
+    
+    
+    // Functions
 
 
 }
